@@ -1,5 +1,7 @@
-pr:
+trigger:
   - main
+
+pr: none
 
 trigger: none
 
