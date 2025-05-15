@@ -1,0 +1,10 @@
+pr:
+  - main
+
+trigger: none
+
+pool:
+  vmImage: Default
+
+stages:
+  - template: templates/stages/test-and-validate.yml
