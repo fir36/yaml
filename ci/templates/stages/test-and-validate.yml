@@ -16,7 +16,7 @@ stages:
           - script: pip install checkov
             displayName: 'Install Checkov'
 
-          - script: $(readlink -f $(which checkov)) -d . --bc-api-key d9431a5d-6be5-4c63-b4a4-d9e66bd23b9f::yYWUH/cv36uOUYRX1fRjkn6GIBw= --repo-id MalaysiaAirlines/DSP-Web --branch $(Build.SourceBranchName) || true
+          - script: $(readlink -f $(which checkov)) -d . --bc-api-key d9431a5d-6be5-4c63-b4a4-d9e66bd23b9f::yYWUH/cv36uOUYRX1fRjkn6GIBw= --repo-id Yaml --branch $(Build.SourceBranchName) || true
             displayName: 'Scan with Prisma Cloud'
             env:
               PRISMA_API_URL: https://api.sg.prismacloud.io 
