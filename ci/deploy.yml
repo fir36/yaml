@@ -4,7 +4,7 @@ pr:
 trigger: none
 
 pool:
-  vmImage: Default
+  name: "Default"
 
 stages:
   - template: templates/stages/test-and-validate.yml
