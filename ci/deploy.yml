@@ -8,3 +8,6 @@ pool:
 
 stages:
   - template: templates/stages/test-and-validate.yml
+    parameters:
+      environmentVariables:
+        DUMMY_SECRET_KEY: "AKIA1234567890DUMMYKEY"
